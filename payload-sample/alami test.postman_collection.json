@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "5b00a0b1-7f12-4a9e-b3bb-b2d6318255e7",
+		"name": "alami test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8090/transaction/getTransactionBetweenDate",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"startDate\" :\"2020-08-17\",\r\n    \"endDate\" :\"2020-09-30\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/transaction/getTransactionBetweenDate",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction",
+						"getTransactionBetweenDate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/transaction/get?participantId=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/transaction/get?participantId=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction",
+						"get"
+					],
+					"query": [
+						{
+							"key": "participantId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/get/participant/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8090/get/participant/all",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"get",
+						"participant",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionId\" :6,\r\n    \"transactionType\" : \"tarik\",\r\n    \"transactionDate\" : \"2020-12-01\",\r\n    \"transactionValue\" : 2000000,\r\n    \"participantId\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionId\" :5,\r\n    \"transactionType\" : \"setor\",\r\n    \"transactionDate\" : \"2020-12-01\",\r\n    \"transactionValue\" : 5000000,\r\n    \"participantId\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionId\" :4,\r\n    \"transactionType\" : \"setor\",\r\n    \"transactionNote\" : \"pengembalian pinjaman sebagian\",\r\n    \"transactionDate\" : \"2020-11-10\",\r\n    \"transactionValue\" : 1000000,\r\n    \"participantId\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionId\" :3,\r\n    \"transactionType\" : \"pinjam\",\r\n    \"transactionDate\" : \"2020-09-30\",\r\n    \"transactionValue\" : 2000000,\r\n    \"participantId\" : 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionId\" :2,\r\n    \"transactionType\" : \"setor\",\r\n    \"transactionDate\" : \"2020-08-18\",\r\n    \"transactionValue\" : 5000000,\r\n    \"participantId\" : 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"transactionId\" :1,\r\n    \"transactionType\" : \"setor\",\r\n    \"transactionDate\" : \"2020-08-17\",\r\n    \"transactionValue\" : 1000000,\r\n    \"participantId\" : 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/transaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"transaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/participant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"participantId\":3,\r\n    \"fullname\" : \"Joko Widodo\",\r\n    \"dob\" : \"1992-03-10\",\r\n    \"address\" : \"Dusun Pisang Rt 10 Rw 20\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/participant",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"participant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/participant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"participantId\":2,\r\n    \"fullname\" : \"Teguh Sudibyantoro\",\r\n    \"dob\" : \"1991-02-10\",\r\n    \"address\" : \"Jalan Pemekaran No 99\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/participant",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"participant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8090/participant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"participantId\":1,\r\n    \"fullname\" : \"Wawan Setiawan\",\r\n    \"dob\" : \"1990-10-01\",\r\n    \"address\" : \"kompleks Asia Serasi No 100\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8090/participant",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"participant"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
